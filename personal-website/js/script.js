@@ -17,7 +17,13 @@ $(document).ready(function(){
     })
 
     //When hover over a button, all the stripes turn grey ? or like they're all randomly generated colors, but they all turn one specific of three colors   
-    
+    $(".worksButton").hover(
+        function() {
+        console.log("hovering")
+        $(".rectangle").css("background-color","rgba(150,150,150,0.4)");
+      }, function() {
+        $(".rectangle").css("background-color", "")
+      })
 
     //when you click on a section's button, it opens the list of files and translates everything up to center the content on the page
 

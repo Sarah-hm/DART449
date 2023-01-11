@@ -68,7 +68,8 @@ transition:all 1s ease-in-out;
     left: -20%; 
     top: 33%; 
     transform:rotate(0deg);
-    background-color: red; 
+    background-color: rgba(255,51,51,0.9); 
+    transition: background-color 1s;
 }
 
 #rect02{
@@ -79,5 +80,10 @@ transition:all 1s ease-in-out;
     top: 1000px; 
     left: -400px;
     transform:rotate(0deg);
-    background-color: aqua; 
+    background-color: rgba(51,255,255,0.9); 
+    transition: background-color 1s, transform 0.2s ease-in-out;
 }
+
+/* .buttonHover{
+    background-color:rgba(150,150,150,0.4)
+} */
