@@ -1,0 +1,83 @@
+*{
+font-family:'Helvetica',sans-serif;
+padding: 0; 
+margin: 0; 
+}
+
+/* Removing default button style */
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.bioContainer{
+    font-size: 75%;
+    width: 20%;
+    position:sticky;
+    top: 5px; 
+    left:5px; 
+    /* font-weight:bold; */
+}
+
+.scrollReminder{
+    position: fixed; 
+    left: 45%; 
+    top: 90vh; 
+    width: 10%; 
+    text-align:center;
+    display:block;
+    color:rgba(0,0,0,0);
+    transition: all 0.5s ease-out; 
+}
+
+/* Everything about works */
+.worksContainer {
+width: 100%; 
+height: 290vh; 
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+/* Different divs for different works topics */
+.worksSection {
+font-weight:bold;
+text-align:center;
+}
+
+.worksButton{
+    font-size:400%;
+}
+
+.collapsibleWorks{
+height:0vh;
+overflow:hidden;
+transition:all 1s ease-in-out;
+}
+
+#rect01{
+    z-index: -1; 
+    width: 200%; 
+    height: 40vh;
+    position: fixed; 
+    left: -20%; 
+    top: 33%; 
+    transform:rotate(0deg);
+    background-color: red; 
+}
+
+#rect02{
+    z-index: -2; 
+    width: 300%; 
+    height: 10vh;
+    position: fixed; 
+    top: 1000px; 
+    left: -400px;
+    transform:rotate(0deg);
+    background-color: aqua; 
+}
