@@ -27,6 +27,7 @@ margin: 0;
     left:77%;
     white-space: nowrap;
     cursor:pointer;
+    vertical-align: baseline;
     transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -53,12 +54,13 @@ button, input[type="submit"], input[type="reset"] {
 .scrollReminder{
     position: fixed; 
     left: 45%; 
-    top: 90vh; 
+    top: 92vh; 
     width: 10%; 
     text-align:center;
-    display:block;
+    /* display:block; */
     color:rgba(0,0,0,0);
     transition: all 0.5s ease-out; 
+    vertical-align: baseline;
 }
 
 /* Everything about works */
