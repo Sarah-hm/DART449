@@ -64,7 +64,7 @@ button, input[type="submit"], input[type="reset"] {
 /* Everything about works */
 .worksContainer {
 width: 100%; 
-height: 250vh; 
+height: 300vh; 
 display:flex;
 flex-direction: column;
 justify-content: space-around;
