@@ -9,11 +9,10 @@ $(document).ready(function(){
     addEventListener("scroll", (event) => {
         // When the page has been scrolled, stop displaying scroll reminder (don't turn it back on)
         $(".scrollReminder").css("color","rgba(0,0,0,0)");
-        console.log("we are scrolling")
         degrees ++
         $("#rect01").css("transform",`rotate(${degrees/2}deg)`)
-        $("#rect02").css("transform",`rotate(${degrees/3}deg)`)
-
+        $("#rect02").css("transform",`rotate(-${degrees/3}deg)`)
+        $("#rect03").css("transform",`rotate(${degrees/4}deg)`)
     })
 
     //When hover over a button, all the stripes turn grey ? or like they're all randomly generated colors, but they all turn one specific of three colors   
@@ -30,11 +29,36 @@ $(document).ready(function(){
     $(".worksButton").click(function(){
         if(!$(this).parent().find(".collapsibleWorks").hasClass("Opened")){
             $(this).parent().find(".collapsibleWorks").addClass("Opened")
-            $(this).parent().find(".collapsibleWorks").css("height","40vh")
+            $(this).parent().find(".collapsibleWorks").css("height","20vh")
         }else{
             $(this).parent().find(".collapsibleWorks").removeClass("Opened")
             $(this).parent().find(".collapsibleWorks").css("height","0vh")
         }
     })
+
+
+    $("#name").click(function(){
+        if (!$(this).hasClass("rotated")){
+            $(this).css("transform","rotate(90deg)");
+            $(this).addClass("rotated");
+        } else {
+            $(this).css("transform","rotate(0deg)");
+            $(this).removeClass("rotated");
+        }
+    })
+
+    $("#websiteName").click(function(){
+        if (!$(this).hasClass("rotated")){
+            $(this).css("transform","rotate(90deg)");
+            $(this).addClass("rotated");
+        } else {
+            $(this).css("transform","rotate(0deg)");
+            $(this).removeClass("rotated");
+        }
+    })
+
+
 })
+
+
 

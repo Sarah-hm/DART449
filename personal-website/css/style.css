@@ -4,6 +4,32 @@ padding: 0;
 margin: 0; 
 }
 
+#name{
+    z-index:50;
+    font-size:200%;
+    position:fixed; 
+    transform:rotate(0deg);
+    transform-origin: bottom left;
+    cursor:pointer;
+    top:2vh;
+    left:2%;
+    /* transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) */
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#websiteName{
+    z-index:49;
+    font-size:300%;
+    position:fixed; 
+    transform:rotate(0deg);
+    transform-origin: top right;
+    top:90vh; 
+    left:77%;
+    white-space: nowrap;
+    cursor:pointer;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 /* Removing default button style */
 button, input[type="submit"], input[type="reset"] {
 	background: none;
@@ -38,7 +64,7 @@ button, input[type="submit"], input[type="reset"] {
 /* Everything about works */
 .worksContainer {
 width: 100%; 
-height: 290vh; 
+height: 250vh; 
 display:flex;
 flex-direction: column;
 justify-content: space-around;
@@ -52,21 +78,40 @@ text-align:center;
 
 .worksButton{
     font-size:400%;
+
 }
 
 .collapsibleWorks{
 height:0vh;
 overflow:hidden;
 transition:all 1s ease-in-out;
+display:flex;
+align-items: stretch;
+justify-content: center;
+flex-direction: column;
+}
+
+ul { 
+    display: flex; 
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+li {
+width:30%;
+padding:0.25%;
+list-style-type: none; 
 }
 
 #rect01{
     z-index: -1; 
     width: 200%; 
-    height: 40vh;
+    height: 30vh;
     position: fixed; 
     left: -20%; 
-    top: 33%; 
+    top: 35vh; 
     transform:rotate(0deg);
     background-color: rgba(255,51,51,0.9); 
     transition: background-color 1s;
@@ -77,12 +122,25 @@ transition:all 1s ease-in-out;
     width: 300%; 
     height: 10vh;
     position: fixed; 
-    top: 1000px; 
-    left: -400px;
+    top:100vh; 
+    left: -70%;
     transform:rotate(0deg);
     background-color: rgba(51,255,255,0.9); 
-    transition: background-color 1s, transform 0.2s ease-in-out;
+    transition: background-color 1s;
 }
+
+#rect03{
+    z-index: -2; 
+    width: 300%; 
+    height: 15vh;
+    position: absolute; 
+    top: 120vh; 
+    left: -50vw;
+    transform:rotate(0deg);
+    background-color: rgba(178,255,102,0.9); 
+    transition: background-color 1s;
+}
+
 
 /* .buttonHover{
     background-color:rgba(150,150,150,0.4)
