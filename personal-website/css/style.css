@@ -23,14 +23,15 @@ margin: 0;
     -webkit-animation-name: tilt-shaking;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
+   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 
 
 @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
-    25% { transform: rotate(2deg); }
+    25% { transform: rotate(1deg); }
     50% { transform: rotate(0deg); }
-    75% { transform: rotate(-2deg); }
+    75% { transform: rotate(-1deg); }
     100% { transform: rotate(0deg); }
   }
 
