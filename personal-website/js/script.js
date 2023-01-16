@@ -6,6 +6,17 @@ $(document).ready(function(){
     },1000
     )
 
+    //Make name shake a little bit if it hasn't been clicked in a few seconds
+    //.. here ..
+
+    let nameShake = setInterval(()=>{
+    $("#name").addClass("tilt-shaking")
+    setTimeout(()=>{
+        $("#name").removeClass("tilt-shaking");
+    },700)
+            console.log("tilt shakinnnn")
+    },5000)
+
     addEventListener("scroll", (event) => {
         // When the page has been scrolled, stop displaying scroll reminder (don't turn it back on)
         $(".scrollReminder").css("color","rgba(0,0,0,0)");
@@ -41,6 +52,7 @@ $(document).ready(function(){
         if (!$(this).hasClass("rotated")){
             $(this).css("transform","rotate(90deg)");
             $(this).addClass("rotated");
+            clearInterval(nameShake);
         } else {
             $(this).css("transform","rotate(0deg)");
             $(this).removeClass("rotated");
@@ -57,6 +69,8 @@ $(document).ready(function(){
         }
     })
 
+  
+   
 
 })
 
