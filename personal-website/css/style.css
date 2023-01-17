@@ -147,7 +147,7 @@ list-style-type: none;
     z-index: -1; 
     width: 400%; 
     height: 30vh;
-    position: fixed; 
+    position: absolute; 
     left: -20%; 
     top: 35vh; 
     transform:rotate(0deg);
