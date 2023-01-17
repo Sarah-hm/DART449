@@ -9,13 +9,11 @@ $(document).ready(function(){
     //Make name shake a little bit if it hasn't been clicked in a few seconds
     //.. here ..
 
-
     let nameShake = setInterval(()=>{
     $("#name").addClass("tilt-shaking")
     setTimeout(()=>{
         $("#name").removeClass("tilt-shaking");
     },700)
-            console.log("tilt shakinnnn")
     },5000)
 
     addEventListener("scroll", (event) => {
