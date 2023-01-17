@@ -9,6 +9,7 @@ $(document).ready(function(){
     //Make name shake a little bit if it hasn't been clicked in a few seconds
     //.. here ..
 
+
     let nameShake = setInterval(()=>{
     $("#name").addClass("tilt-shaking")
     setTimeout(()=>{
@@ -51,10 +52,12 @@ $(document).ready(function(){
     $("#name").click(function(){
         if (!$(this).hasClass("rotated")){
             $(this).css("transform","rotate(90deg)");
+            $("#picture").css("transform","rotate(0deg) scale(2) translate(5%)")
             $(this).addClass("rotated");
             clearInterval(nameShake);
         } else {
             $(this).css("transform","rotate(0deg)");
+            $("#picture").css("transform","rotate(-90deg) scale(2) translate(30px)")
             $(this).removeClass("rotated");
         }
     })
@@ -67,6 +70,8 @@ $(document).ready(function(){
             $(this).css("transform","rotate(0deg)");
             $(this).removeClass("rotated");
         }
+
+    
     })
 
   
