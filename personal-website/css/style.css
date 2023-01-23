@@ -1,3 +1,9 @@
+:root{
+    --rect01-color: rgba(255,51,51,0.9);
+    --rect02-color: rgba(51,255,255,0.9);
+    --rect03-color: rgba(178,255,102,0.9);
+}
+
 *{
 font-family:'Helvetica',sans-serif;
 box-sizing:border-box;
@@ -151,7 +157,7 @@ list-style-type: none;
     left: -20%; 
     top: 35vh; 
     transform:rotate(0deg);
-    background-color: rgba(255,51,51,0.9); 
+    background-color: var(--rect01-color); 
     transition: background-color 1s;
 }
 
@@ -163,7 +169,7 @@ list-style-type: none;
     top:100vh; 
     left: -100vw;
     transform:rotate(0deg);
-    background-color: rgba(51,255,255,0.9); 
+    background-color: var(--rect02-color); 
     transition: background-color 1s;
 }
 
@@ -175,7 +181,7 @@ list-style-type: none;
     top: 120vh; 
     left: -50vw;
     transform:rotate(0deg);
-    background-color: rgba(178,255,102,0.9); 
+    background-color: var(--rect03-color); 
     transition: background-color 1s;
 }
 
