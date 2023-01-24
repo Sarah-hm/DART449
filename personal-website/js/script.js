@@ -1,6 +1,7 @@
 let degrees = 0;
 $(document).ready(function(){
 
+
     setTimeout(()=>{
         $(".scrollReminder").css("color","rgba(0,0,0,0.4)");
     },1000
@@ -73,7 +74,25 @@ $(document).ready(function(){
     })
 
   
-   
+//   ======= Exercice 1 =======
+
+$("#btn-ex1").on("click", function(){
+
+$("#ex1").css("left","-50%")
+})
+
+$(".circle").on("click",function(){
+    let cirHeight = $(this).css("top")
+    $(this).css("top","65vh")
+    setTimeout(()=>{
+    $(this).css("top",`${cirHeight}`)
+    },3000
+    )
+})
+
+$("#goBack-ex1").on("click",function(){
+$("#ex1").css("left","100%")
+})
 
 })
 
