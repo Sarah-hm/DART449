@@ -110,12 +110,13 @@ $(".ex1").toggleClass("ex1-opened");
 if($("#ex01-text").hasClass("ex01-text-closed")){
     $("#ex01-text").removeClass("ex01-text-closed")
     $("#ex01-text").text("Click on the circles")
-    //Wait a few seconds until it reappears to avoid a jaring effect when sliding out
+    //Wait a few seconds until it reappears to avoid a jaring effect when sliding
     setTimeout(function(){
         $("#ex01-text").css({"display":"block","color":"rgba(0,0,0,1)"}) 
     },3000)
 }
-})
+})//end of exercice 01
+
 
 })
 

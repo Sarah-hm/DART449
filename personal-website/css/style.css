@@ -204,8 +204,6 @@ font-size:1.1rem;
  
 
 /* ==========   Exercice 1  ========== */
-
-
 .ex1{
     z-index:200;
     width:150%; 
@@ -304,4 +302,26 @@ font-size:1.1rem;
     top:35%; 
     left:50%;
     transition: top 1s cubic-bezier(.47,1.64,.41,.8)
+}
+
+
+/* ==========   Exercice 2  ========== */
+
+.ex2{
+    z-index:200;
+    width:150%; 
+    height:100vh;
+    /* background-color: var(--ex1-background-color); */
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 15%, rgba(255,255,255,1) 30%);
+    /* background: linear-gradient(90deg, rgba (255,255,255,0) 0%, rgba (255,255,255,1) 30%); */
+    position:fixed;
+    top:0px;
+    left:-200%;
+    transition: left 3s;
+    display:flex;
+}
+
+.ex2-opened{
+    left:0%;
 }

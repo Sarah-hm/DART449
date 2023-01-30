@@ -1,0 +1,3 @@
+url to personal website (and exercice 1): https://sarah-hm.github.io/DART449/personal-website/index.html
+
+url to git repo with personal website and ex01 code: https://github.com/Sarah-hm/DART449/tree/main/personal-website
