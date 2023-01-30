@@ -106,6 +106,15 @@ $(".circle").on("click",function(){
 // Clicking on 'go back' will closed the window by sliding it out
 $("#goBack-ex1").on("click",function(){
 $(".ex1").toggleClass("ex1-opened");   
+// reset ex01-text so it appears again when opened back
+if($("#ex01-text").hasClass("ex01-text-closed")){
+    $("#ex01-text").removeClass("ex01-text-closed")
+    $("#ex01-text").text("Click on the circles")
+    //Wait a few seconds until it reappears to avoid a jaring effect when sliding out
+    setTimeout(function(){
+        $("#ex01-text").css({"display":"block","color":"rgba(0,0,0,1)"}) 
+    },3000)
+}
 })
 
 })
