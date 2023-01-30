@@ -76,22 +76,36 @@ $(document).ready(function(){
   
 //   ======= Exercice 1 =======
 
+//Clicking on ex1 button will make the window slide in from the right
 $("#btn-ex1").on("click", function(){
-
-$("#ex1").css("left","-50%")
+$(".ex1").toggleClass("ex1-opened");    
 })
 
+//when user clicks on circle, circle 'drops', and goes back up after 3 seconds (using css)
+// text about having to click circle changes and disappears with css animation
 $(".circle").on("click",function(){
+    //remember the original height position of the specific circle
     let cirHeight = $(this).css("top")
+    // drop the circle and wait 3 seconds to put it back to its original positin
     $(this).css("top","65vh")
     setTimeout(()=>{
     $(this).css("top",`${cirHeight}`)
     },3000
     )
+    if(!$("#ex01-text").hasClass("ex01-text-closed")){
+        $("#ex01-text").addClass("ex01-text-closed")
+        $("#ex01-text").text("Great Job!")
+        $("#ex01-text").css("color","rgba(0,0,0,0)")
+        //Wait 2 seconds and stop displaying the text entirely
+        setTimeout(function(){
+            $("#ex01-text").css("display","none")
+        },4000)
+    }
 })
 
+// Clicking on 'go back' will closed the window by sliding it out
 $("#goBack-ex1").on("click",function(){
-$("#ex1").css("left","100%")
+$(".ex1").toggleClass("ex1-opened");   
 })
 
 })
