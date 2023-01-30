@@ -319,9 +319,18 @@ font-size:1.1rem;
     top:0px;
     left:-200%;
     transition: left 3s;
-    display:flex;
+    /* display:flex; */
 }
 
 .ex2-opened{
     left:0%;
+}
+
+#ex2-textArea{ 
+    resize:none;
+    height: 10vh;
+}
+
+#ex2-submit{
+    border: solid 2px black;
 }
