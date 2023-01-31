@@ -46,7 +46,6 @@ submitBtn.addEventListener(`click`, function(){
     if (submitBtnCount >= 5){
         submitBtn.innerHTML = `Ok stop it now, ${username}. You'll never be satisfied anyway.`  
         ex2.style.background = ` linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 15%, rgba(255,255,255,1) 30%)`;
-  
     }
 
 })
