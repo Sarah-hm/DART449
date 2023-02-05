@@ -18,6 +18,16 @@ btnEx02.addEventListener(`click`, function(){
 
 ex02CloseBtn.addEventListener(`click`,function(){
     ex2.classList.toggle("ex2-opened")
+    submittedOnce = false; 
+    submitBtnCount = 0; 
+    setTimeout(function(){ 
+      submitBtn.innerHTML = "I am certain this is my name. Submit my answer";
+      ex2.style.background = ` linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 15%, rgba(255,255,255,1) 30%)`;
+      textArea.value = ""
+    }, 1500)
+
+
+
 })
 
 //When submit button is clicked, register what's in the text area,  change background color, change button text
@@ -49,6 +59,10 @@ submitBtn.addEventListener(`click`, function(){
     }
 
 })
+
+
+
+
   };    
 
 
