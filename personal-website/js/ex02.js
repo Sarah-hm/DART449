@@ -2,6 +2,7 @@ window.onload = (event) => {
     
 
 const btnEx02 = document.querySelector("#btn-ex2")
+const welcomeMessage = document.querySelector("#ex2-welcome-message")
 const ex02CloseBtn = document.querySelector("#close-ex02")
 const ex2 = document.querySelector(".ex2")
 const submitBtn = document.querySelector("#ex2-submit");
@@ -9,6 +10,7 @@ const textArea = document.querySelector(`#ex2-textArea`)
 let submitBtnCount = 0; 
 let submittedOnce = false;
 let username;
+
 
 //Open exercice 02 when ex2 button is clicked (slide from left)
 btnEx02.addEventListener(`click`, function(){
@@ -21,6 +23,7 @@ ex02CloseBtn.addEventListener(`click`,function(){
     submittedOnce = false; 
     submitBtnCount = 0; 
     setTimeout(function(){ 
+      welcomeMessage.innerHTML = "You are feeling welcomed, again."
       submitBtn.innerHTML = "I am certain this is my name. Submit my answer";
       ex2.style.background = ` linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 15%, rgba(255,255,255,1) 30%)`;
       textArea.value = ""
