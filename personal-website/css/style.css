@@ -161,6 +161,11 @@ li:hover{
 font-size:1.1rem;
 }
 
+li a{ 
+    text-decoration:none;
+    color:black;
+}
+
 #rect01{
     z-index: -1; 
     width: 400%; 
