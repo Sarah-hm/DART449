@@ -25,6 +25,7 @@ ex02CloseBtn.addEventListener(`click`,function(){
     setTimeout(function(){ 
       welcomeMessage.innerHTML = "You are feeling welcomed, again."
       submitBtn.innerHTML = "I am certain this is my name. Submit my answer";
+      
       ex2.style.background = ` linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 15%, rgba(255,255,255,1) 30%)`;
       textArea.value = ""
     }, 1500)
