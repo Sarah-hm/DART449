@@ -1,8 +1,6 @@
-
-
-window.onload = (event) => { 
-
-
+window.onload = (event) => {
+    
+// =========== EXERCICE 2 ============
 const btnEx02 = document.querySelector("#btn-ex2")
 const welcomeMessage = document.querySelector("#ex2-welcome-message")
 const ex02CloseBtn = document.querySelector("#close-ex02")
@@ -67,26 +65,7 @@ submitBtn.addEventListener(`click`, function(){
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// =========== EXERCICE 03 ========
 
 const ex3btn = document.querySelector("#btn-ex3")
 const ex3 = document.querySelector(".ex3")
@@ -165,4 +144,15 @@ buttons.forEach(function(el){
     }) //Clicked visualization button 
 })
 
-}
+
+  };    
+
+
+
+// Not my code, copied from another personal project of mine. Can't remember where I took it. Codepen? aaaaaaah.
+  function generateLightColorRgb() {
+    const red = Math.floor((1 + Math.random()) * 256/2);
+     const green = Math.floor((1 + Math.random()) * 256/2);
+     const blue = Math.floor((1 + Math.random()) * 256/2);
+     return "rgba(" + red + ", " + green + ", " + blue ;
+} 
